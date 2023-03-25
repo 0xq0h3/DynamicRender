@@ -7,79 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FFEF42AC29B6369A00E52159 /* DynamicRenderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF42AB29B6369A00E52159 /* DynamicRenderAppApp.swift */; };
-		FFEF42B029B6369B00E52159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEF42AF29B6369B00E52159 /* Assets.xcassets */; };
-		FFEF42B329B6369B00E52159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEF42B229B6369B00E52159 /* Preview Assets.xcassets */; };
-		FFEF42BE29B6386F00E52159 /* Client in Frameworks */ = {isa = PBXBuildFile; productRef = FFEF42BD29B6386F00E52159 /* Client */; };
+		FF11C6CD29CF1BF900EB5023 /* Client in Frameworks */ = {isa = PBXBuildFile; productRef = FF11C6CC29CF1BF900EB5023 /* Client */; };
+		FF5CBAB329B4DD4D004FFE29 /* DynamicRenderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5CBAB229B4DD4D004FFE29 /* DynamicRenderApp.swift */; };
+		FF5CBAB729B4DD4E004FFE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5CBAB629B4DD4E004FFE29 /* Assets.xcassets */; };
+		FF5CBABA29B4DD4E004FFE29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5CBAB929B4DD4E004FFE29 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FFEF42A829B6369A00E52159 /* DynamicRenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicRenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFEF42AB29B6369A00E52159 /* DynamicRenderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicRenderAppApp.swift; sourceTree = "<group>"; };
-		FFEF42AF29B6369B00E52159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFEF42B229B6369B00E52159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FFEF42BA29B636AB00E52159 /* AppLogic */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppLogic; path = ../AppLogic; sourceTree = "<group>"; };
-		FFEF42BB29B636B200E52159 /* DynamicRenderServer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DynamicRenderServer; path = ../DynamicRenderServer; sourceTree = "<group>"; };
+		FF5CBAAF29B4DD4D004FFE29 /* DynamicRenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicRenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5CBAB229B4DD4D004FFE29 /* DynamicRenderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicRenderApp.swift; sourceTree = "<group>"; };
+		FF5CBAB629B4DD4E004FFE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5CBAB929B4DD4E004FFE29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF5CBAC229B4DD66004FFE29 /* DynamicRenderServer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DynamicRenderServer; path = ../DynamicRenderServer; sourceTree = "<group>"; };
+		FF5CBAC329B4E140004FFE29 /* AppLogic */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppLogic; path = ../AppLogic; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FFEF42A529B6369A00E52159 /* Frameworks */ = {
+		FF5CBAAC29B4DD4D004FFE29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEF42BE29B6386F00E52159 /* Client in Frameworks */,
+				FF11C6CD29CF1BF900EB5023 /* Client in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FFEF429F29B6369A00E52159 = {
+		FF5CBAA629B4DD4D004FFE29 = {
 			isa = PBXGroup;
 			children = (
-				FFEF42B929B636AB00E52159 /* Packages */,
-				FFEF42AA29B6369A00E52159 /* DynamicRenderApp */,
-				FFEF42A929B6369A00E52159 /* Products */,
-				FFEF42BC29B6386F00E52159 /* Frameworks */,
+				FF5CBAC029B4DD5E004FFE29 /* Packages */,
+				FF5CBAB129B4DD4D004FFE29 /* DynamicRenderApp */,
+				FF5CBAB029B4DD4D004FFE29 /* Products */,
+				FF5CBAC429B4E1C5004FFE29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		FFEF42A929B6369A00E52159 /* Products */ = {
+		FF5CBAB029B4DD4D004FFE29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFEF42A829B6369A00E52159 /* DynamicRenderApp.app */,
+				FF5CBAAF29B4DD4D004FFE29 /* DynamicRenderApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFEF42AA29B6369A00E52159 /* DynamicRenderApp */ = {
+		FF5CBAB129B4DD4D004FFE29 /* DynamicRenderApp */ = {
 			isa = PBXGroup;
 			children = (
-				FFEF42AB29B6369A00E52159 /* DynamicRenderAppApp.swift */,
-				FFEF42AF29B6369B00E52159 /* Assets.xcassets */,
-				FFEF42B129B6369B00E52159 /* Preview Content */,
+				FF5CBAB229B4DD4D004FFE29 /* DynamicRenderApp.swift */,
+				FF5CBAB629B4DD4E004FFE29 /* Assets.xcassets */,
+				FF5CBAB829B4DD4E004FFE29 /* Preview Content */,
 			);
 			path = DynamicRenderApp;
 			sourceTree = "<group>";
 		};
-		FFEF42B129B6369B00E52159 /* Preview Content */ = {
+		FF5CBAB829B4DD4E004FFE29 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FFEF42B229B6369B00E52159 /* Preview Assets.xcassets */,
+				FF5CBAB929B4DD4E004FFE29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FFEF42B929B636AB00E52159 /* Packages */ = {
+		FF5CBAC029B4DD5E004FFE29 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				FFEF42BA29B636AB00E52159 /* AppLogic */,
-				FFEF42BB29B636B200E52159 /* DynamicRenderServer */,
+				FF5CBAC229B4DD66004FFE29 /* DynamicRenderServer */,
+				FF5CBAC329B4E140004FFE29 /* AppLogic */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
 		};
-		FFEF42BC29B6386F00E52159 /* Frameworks */ = {
+		FF5CBAC429B4E1C5004FFE29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -89,13 +89,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFEF42A729B6369A00E52159 /* DynamicRenderApp */ = {
+		FF5CBAAE29B4DD4D004FFE29 /* DynamicRenderApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFEF42B629B6369B00E52159 /* Build configuration list for PBXNativeTarget "DynamicRenderApp" */;
+			buildConfigurationList = FF5CBABD29B4DD4E004FFE29 /* Build configuration list for PBXNativeTarget "DynamicRenderApp" */;
 			buildPhases = (
-				FFEF42A429B6369A00E52159 /* Sources */,
-				FFEF42A529B6369A00E52159 /* Frameworks */,
-				FFEF42A629B6369A00E52159 /* Resources */,
+				FF5CBAAB29B4DD4D004FFE29 /* Sources */,
+				FF5CBAAC29B4DD4D004FFE29 /* Frameworks */,
+				FF5CBAAD29B4DD4D004FFE29 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -103,28 +103,28 @@
 			);
 			name = DynamicRenderApp;
 			packageProductDependencies = (
-				FFEF42BD29B6386F00E52159 /* Client */,
+				FF11C6CC29CF1BF900EB5023 /* Client */,
 			);
 			productName = DynamicRenderApp;
-			productReference = FFEF42A829B6369A00E52159 /* DynamicRenderApp.app */;
+			productReference = FF5CBAAF29B4DD4D004FFE29 /* DynamicRenderApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FFEF42A029B6369A00E52159 /* Project object */ = {
+		FF5CBAA729B4DD4D004FFE29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					FFEF42A729B6369A00E52159 = {
+					FF5CBAAE29B4DD4D004FFE29 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = FFEF42A329B6369A00E52159 /* Build configuration list for PBXProject "DynamicRenderApp" */;
+			buildConfigurationList = FF5CBAAA29B4DD4D004FFE29 /* Build configuration list for PBXProject "DynamicRenderApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,41 +132,41 @@
 				en,
 				Base,
 			);
-			mainGroup = FFEF429F29B6369A00E52159;
-			productRefGroup = FFEF42A929B6369A00E52159 /* Products */;
+			mainGroup = FF5CBAA629B4DD4D004FFE29;
+			productRefGroup = FF5CBAB029B4DD4D004FFE29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFEF42A729B6369A00E52159 /* DynamicRenderApp */,
+				FF5CBAAE29B4DD4D004FFE29 /* DynamicRenderApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FFEF42A629B6369A00E52159 /* Resources */ = {
+		FF5CBAAD29B4DD4D004FFE29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEF42B329B6369B00E52159 /* Preview Assets.xcassets in Resources */,
-				FFEF42B029B6369B00E52159 /* Assets.xcassets in Resources */,
+				FF5CBABA29B4DD4E004FFE29 /* Preview Assets.xcassets in Resources */,
+				FF5CBAB729B4DD4E004FFE29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FFEF42A429B6369A00E52159 /* Sources */ = {
+		FF5CBAAB29B4DD4D004FFE29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEF42AC29B6369A00E52159 /* DynamicRenderAppApp.swift in Sources */,
+				FF5CBAB329B4DD4D004FFE29 /* DynamicRenderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FFEF42B429B6369B00E52159 /* Debug */ = {
+		FF5CBABB29B4DD4E004FFE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		FFEF42B529B6369B00E52159 /* Release */ = {
+		FF5CBABC29B4DD4E004FFE29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		FFEF42B729B6369B00E52159 /* Debug */ = {
+		FF5CBABE29B4DD4E004FFE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -309,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		FFEF42B829B6369B00E52159 /* Release */ = {
+		FF5CBABF29B4DD4E004FFE29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -341,20 +341,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FFEF42A329B6369A00E52159 /* Build configuration list for PBXProject "DynamicRenderApp" */ = {
+		FF5CBAAA29B4DD4D004FFE29 /* Build configuration list for PBXProject "DynamicRenderApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFEF42B429B6369B00E52159 /* Debug */,
-				FFEF42B529B6369B00E52159 /* Release */,
+				FF5CBABB29B4DD4E004FFE29 /* Debug */,
+				FF5CBABC29B4DD4E004FFE29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFEF42B629B6369B00E52159 /* Build configuration list for PBXNativeTarget "DynamicRenderApp" */ = {
+		FF5CBABD29B4DD4E004FFE29 /* Build configuration list for PBXNativeTarget "DynamicRenderApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFEF42B729B6369B00E52159 /* Debug */,
-				FFEF42B829B6369B00E52159 /* Release */,
+				FF5CBABE29B4DD4E004FFE29 /* Debug */,
+				FF5CBABF29B4DD4E004FFE29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -362,11 +362,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FFEF42BD29B6386F00E52159 /* Client */ = {
+		FF11C6CC29CF1BF900EB5023 /* Client */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Client;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = FFEF42A029B6369A00E52159 /* Project object */;
+	rootObject = FF5CBAA729B4DD4D004FFE29 /* Project object */;
 }
