@@ -11,6 +11,7 @@
 		FF5CBAB329B4DD4D004FFE29 /* DynamicRenderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5CBAB229B4DD4D004FFE29 /* DynamicRenderApp.swift */; };
 		FF5CBAB729B4DD4E004FFE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5CBAB629B4DD4E004FFE29 /* Assets.xcassets */; };
 		FF5CBABA29B4DD4E004FFE29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5CBAB929B4DD4E004FFE29 /* Preview Assets.xcassets */; };
+		FF6C8C3029CF456600D45A18 /* GenericJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FF6C8C2F29CF456600D45A18 /* GenericJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6C8C3029CF456600D45A18 /* GenericJSON in Frameworks */,
 				FF11C6CD29CF1BF900EB5023 /* Client in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +106,7 @@
 			name = DynamicRenderApp;
 			packageProductDependencies = (
 				FF11C6CC29CF1BF900EB5023 /* Client */,
+				FF6C8C2F29CF456600D45A18 /* GenericJSON */,
 			);
 			productName = DynamicRenderApp;
 			productReference = FF5CBAAF29B4DD4D004FFE29 /* DynamicRenderApp.app */;
@@ -133,6 +136,9 @@
 				Base,
 			);
 			mainGroup = FF5CBAA629B4DD4D004FFE29;
+			packageReferences = (
+				FF6C8C2E29CF456600D45A18 /* XCRemoteSwiftPackageReference "generic-json-swift" */,
+			);
 			productRefGroup = FF5CBAB029B4DD4D004FFE29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,10 +367,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FF6C8C2E29CF456600D45A18 /* XCRemoteSwiftPackageReference "generic-json-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iwill/generic-json-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		FF11C6CC29CF1BF900EB5023 /* Client */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Client;
+		};
+		FF6C8C2F29CF456600D45A18 /* GenericJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF6C8C2E29CF456600D45A18 /* XCRemoteSwiftPackageReference "generic-json-swift" */;
+			productName = GenericJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

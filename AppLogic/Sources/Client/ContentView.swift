@@ -1,21 +1,35 @@
 import SwiftUI
 
-public struct ContentView1: View {
+public struct ContentView: View {
+  @StateObject var viewModel = DynamicRenderViewModel()
   public init() {}
-
   public var body: some View {
     VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundColor(.accentColor)
-      Text("Hello, world!")
+      Button("Refresh") {
+        Task {
+         try await viewModel.fetchScheme()
+        }
+      }
+      .tint(.blue)
+      .controlSize(.large)
+      .buttonStyle(.bordered)
+
+      ScrollView {
+        DynamicRenderer(schemes: viewModel.scheme)
+      }
     }
-    .padding()
+    .task {
+      do {
+        try await viewModel.fetchScheme()
+      } catch {
+        print("error: \(error)")
+      }
+    }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView1()
+    ContentView()
   }
 }

@@ -48,10 +48,10 @@
     {
       "identity" : "generic-json-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iwill/generic-json-swift.git",
+      "location" : "https://github.com/iwill/generic-json-swift",
       "state" : {
-        "revision" : "0a06575f4038b504e78ac330913d920f1630f510",
-        "version" : "2.0.2"
+        "branch" : "master",
+        "revision" : "b010e534371c78cfba8f9a517a36577ad1d71501"
       }
     },
     {
