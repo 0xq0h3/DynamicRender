@@ -4,6 +4,19 @@ import GenericJSON
 class SchemeBuilder {
   init() { }
 
+  func buildImageScheme() -> [DynamicScheme] {
+    let scheme = DynamicScheme(
+      id: UUID(),
+      type: "image",
+      raw: [
+        "url": JSON(stringLiteral: imageURLs[0]),
+        "width": JSON(floatLiteral: 300),
+        "height": JSON(floatLiteral: 300)
+      ]
+    )
+    return [scheme]
+  }
+
   func buildFirstScheme() -> [DynamicScheme] {
     let labels = zip(titles, authors)
       .map { (title, author) in

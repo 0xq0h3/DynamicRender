@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Logic
 
 struct DynamicRenderer: View {
   let schemes: [any DynamicScheme]
@@ -12,7 +13,6 @@ struct DynamicRenderer: View {
     }
   }
 }
-
 
 extension DynamicRenderer {
   static func render(scheme: any DynamicScheme) -> AnyView {

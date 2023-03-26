@@ -29,7 +29,6 @@ extension AnyDynamicScheme {
     guard let value = raw[keyPath: key]?.doubleValue else {
       return 0
     }
-//    let doubleValue = Double(value) ?? 0
     return CGFloat(value)
   }
 

@@ -16,7 +16,3 @@ class DynamicRenderViewModel: ObservableObject {
     }
   }
 }
-
-struct UISchemePageResponse: Codable {
-  var ui: [AnyDynamicScheme]
-}
