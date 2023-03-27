@@ -4,17 +4,17 @@ import GenericJSON
 class SchemeBuilder {
   init() { }
 
-  func buildImageScheme() -> [DynamicScheme] {
-    let scheme = DynamicScheme(
+  func buildSimpleScheme() -> [DynamicScheme] {
+    return [DynamicScheme(
       id: UUID(),
-      type: "image",
+      type: "column",
       raw: [
-        "url": JSON(stringLiteral: imageURLs[0]),
-        "width": JSON(floatLiteral: 300),
-        "height": JSON(floatLiteral: 300)
+        "children": [
+          buildImage(imageURL: imageURLs[0], width: 300, height: 300),
+          buildText(text: "Hello, World!")
+        ]
       ]
-    )
-    return [scheme]
+    )]
   }
 
   func buildFirstScheme() -> [DynamicScheme] {

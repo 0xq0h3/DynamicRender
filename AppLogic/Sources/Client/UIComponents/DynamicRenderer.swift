@@ -1,6 +1,6 @@
 import Foundation
 import SwiftUI
-import Logic
+import Common
 
 struct DynamicRenderer: View {
   let schemes: [any DynamicScheme]
