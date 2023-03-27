@@ -4,7 +4,7 @@ class DynamicRenderViewModel: ObservableObject {
   @Published var scheme = [any DynamicScheme]()
 
   func fetchScheme() async throws {
-     let urlString = "http://127.0.0.1:8080/schemes/"
+    let urlString = "http://127.0.0.1:8080/schemes/"
     guard let url = URL(string: urlString) else {
       throw APIError.invalidURL
     }

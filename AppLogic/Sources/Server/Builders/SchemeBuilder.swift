@@ -23,7 +23,7 @@ class SchemeBuilder {
         let titleText = buildText(text: title)
         let authorText = buildText(text: author)
 
-        return DynamicScheme(id: UUID(), type: "column", raw: ["children": [titleText, authorText]]).toJSON()
+        return DynamicScheme(id: UUID(), type: "row", raw: ["children": [titleText, authorText]]).toJSON()
       }
 
     let firstScheme = zip(labels, imageURLs)
@@ -32,7 +32,7 @@ class SchemeBuilder {
 
         let (label, imageURL) = cur
         let imageScheme = buildImage(imageURL: imageURL, width: 150, height: 150)
-        let cellScheme = DynamicScheme(id: UUID(), type: "row", raw: ["children": [imageScheme, label]]).toJSON()
+        let cellScheme = DynamicScheme(id: UUID(), type: "column", raw: ["children": [imageScheme, label]]).toJSON()
 
         array.append(cellScheme)
         return array
@@ -42,7 +42,7 @@ class SchemeBuilder {
       .map { json in
         let first = json.first ?? .null
         let second = json.last ?? .null
-        return DynamicScheme(id: UUID(), type: "column", raw: ["children": [first, second]])
+        return DynamicScheme(id: UUID(), type: "row", raw: ["children": [first, second]])
       }
 
     return firstScheme
@@ -54,7 +54,7 @@ class SchemeBuilder {
         let titleText = buildText(text: title)
         let authorText = buildText(text: author)
 
-        return DynamicScheme(id: UUID(), type: "column", raw: ["children": [titleText, authorText]]).toJSON()
+        return DynamicScheme(id: UUID(), type: "row", raw: ["children": [titleText, authorText]]).toJSON()
       }
 
     let secondScheme = zip(labels, imageURLs)
@@ -63,7 +63,7 @@ class SchemeBuilder {
 
         let (label, imageURL) = cur
         let imageScheme = buildImage(imageURL: imageURL, width: 300, height: 300)
-        let cellScheme = DynamicScheme(id: UUID(), type: "row", raw: ["children": [imageScheme, label]])
+        let cellScheme = DynamicScheme(id: UUID(), type: "column", raw: ["children": [imageScheme, label]])
 
         array.append(cellScheme)
         return array

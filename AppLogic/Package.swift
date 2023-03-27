@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "Server",
             dependencies: [
-              .target(name: "Logic"),
+              .target(name: "Common"),
               .product(name: "Fluent", package: "fluent"),
               .product(name: "Vapor", package: "vapor"),
               .product(name: "GenericJSON", package: "generic-json-swift")
@@ -32,9 +32,9 @@ let package = Package(
                 .unsafeFlags(["-cross-module-optimization"], .when(configuration: .release))
             ]
         ),
-        .target(name: "Logic"),
+        .target(name: "Common"),
         .target(name: "Client", dependencies: [
-          .target(name: "Logic")
+          .target(name: "Common")
         ]),
         .testTarget(name: "ServerTests", dependencies: [
             .target(name: "Server"),

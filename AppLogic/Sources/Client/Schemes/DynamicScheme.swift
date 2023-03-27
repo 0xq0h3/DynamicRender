@@ -10,7 +10,6 @@ extension Array where Element == any DynamicScheme {
     guard let list = self as? [AnyDynamicScheme] else {
       return self
     }
-
     return list.map(\.typed)
   }
 }
