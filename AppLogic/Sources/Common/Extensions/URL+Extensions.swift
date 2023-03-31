@@ -1,5 +1,9 @@
 import Foundation
 
-extension URL {
-  public static let notFound = URL(string: "https://team.alar.my/")!
+public extension URL {
+  static let notFound = URL(string: "https://team.alar.my/")!
+  
+  init(withValid urlString: String) {
+    self.init(string: urlString)!
+  }
 }

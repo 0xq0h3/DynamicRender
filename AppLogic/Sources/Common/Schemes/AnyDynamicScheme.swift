@@ -1,10 +1,16 @@
 import Foundation
 import GenericJSON
 
-struct AnyDynamicScheme: DynamicScheme, Codable, Identifiable {
-  var id: String
-  let type: DynamicSchemeType
-  let raw: JSON
+public struct AnyDynamicScheme: DynamicScheme, Codable {
+  public var id: String
+  public let type: DynamicSchemeType
+  public let raw: JSON
+
+  public init(id: String, type: DynamicSchemeType, raw: JSON) {
+    self.id = id
+    self.type = type
+    self.raw = raw
+  }
 
   var typed: any DynamicScheme {
     switch type {
@@ -24,7 +30,7 @@ struct AnyDynamicScheme: DynamicScheme, Codable, Identifiable {
 
 // Parsing
 
-extension AnyDynamicScheme {
+public extension AnyDynamicScheme {
   func parse(prop key: String) -> CGFloat {
     guard let value = raw[keyPath: key]?.doubleValue else {
       return 0
@@ -37,7 +43,7 @@ extension AnyDynamicScheme {
       return URL.notFound
     }
 
-    return URL(string: urlString)!
+    return URL(withValid: urlString)
   }
 
   func parse(prop key: String) -> String {
@@ -61,3 +67,4 @@ extension AnyDynamicScheme {
     }
   }
 }
+

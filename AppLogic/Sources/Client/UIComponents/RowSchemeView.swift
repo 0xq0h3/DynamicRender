@@ -1,6 +1,8 @@
 import Foundation
 import SwiftUI
 
+import Common
+
 struct RowSchemeView: View {
   let scheme: RowScheme
 

@@ -1,5 +1,7 @@
 import Foundation
 
+import Common
+
 class DynamicRenderViewModel: ObservableObject {
   @Published var scheme = [any DynamicScheme]()
 

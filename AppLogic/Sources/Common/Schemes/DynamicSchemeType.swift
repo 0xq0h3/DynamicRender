@@ -1,6 +1,6 @@
 import Foundation
 
-enum DynamicSchemeType: String, Codable {
+public enum DynamicSchemeType: String, Codable {
   case row
   case column
   case text

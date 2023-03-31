@@ -1,6 +1,8 @@
 import Foundation
 import SwiftUI
 
+import Common
+
 struct TextSchemeView: View {
     let scheme: TextScheme
 

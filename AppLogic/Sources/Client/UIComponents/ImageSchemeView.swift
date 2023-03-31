@@ -1,4 +1,5 @@
 import SwiftUI
+import Common
 
 struct ImageSchemeView: View {
   let scheme: ImageScheme
