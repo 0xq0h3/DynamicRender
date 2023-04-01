@@ -11,6 +11,7 @@ public struct RowScheme: DynamicScheme {
     self.children = children
   }
 
+  // Initialize Scheme from reading properties in raw JSON
   public static func buildSchemeFrom(_ anyScheme: AnyDynamicScheme) -> Self {
     .init(
       id: anyScheme.id,
@@ -18,6 +19,7 @@ public struct RowScheme: DynamicScheme {
     )
   }
 
+  // Erase type to AnyDynamicScheme
   public func eraseToAnyDynamicScheme() -> AnyDynamicScheme {
     let children = self.children.map { child in
       let scheme = child as? AnyDynamicScheme

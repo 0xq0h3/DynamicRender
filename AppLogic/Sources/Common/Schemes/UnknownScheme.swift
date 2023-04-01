@@ -9,12 +9,13 @@ public struct UnknownScheme: DynamicScheme {
     self.id = id
   }
 
+  // Initialize Scheme from reading properties in raw JSON
   static func buildSchemeFrom(_ anyScheme: AnyDynamicScheme) -> Self {
     .init(
       id: anyScheme.id
     )
   }
-
+  // Erase type to AnyDynamicScheme
   public func eraseToAnyDynamicScheme() -> AnyDynamicScheme {
     .init(
       id: self.id,

@@ -17,7 +17,7 @@ struct DynamicSchemeController: RouteCollection {
     )
   }
 
-  let titles = [
+  private let titles = [
     "beach",
     "landscape",
     "sunset",
@@ -30,7 +30,7 @@ struct DynamicSchemeController: RouteCollection {
     "sea"
   ]
 
-  let authors = [
+  private let authors = [
     "Joseph Barrientos",
     "Philipp Reiner",
     "Lukasz Szmigiel",
@@ -43,7 +43,7 @@ struct DynamicSchemeController: RouteCollection {
     "Anna Popović"
   ]
 
-  let imageURLs = [
+  private let imageURLs = [
     "https://fastly.picsum.photos/id/653/400/400.jpg?hmac=7AxZLodHbyzBgQzwyqRenkCZ3rMhwtawLsYaDad64YM",
     "https://fastly.picsum.photos/id/206/400/400.jpg?hmac=ZfNzmwb_G-cENYBcFfGB0f-xCi3wb6TBkE-4eQGt7ys",
     "https://fastly.picsum.photos/id/413/400/400.jpg?hmac=-4Fi-wezu1Vi5MiN26ZcAqlCXNbyBGezeISVWgPAhQc",

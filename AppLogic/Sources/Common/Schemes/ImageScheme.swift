@@ -22,6 +22,17 @@ public struct ImageScheme: DynamicScheme {
     self.height = height
   }
 
+  // Initialize Scheme from reading properties in raw JSON
+  public static func buildSchemeFrom(_ anyScheme: AnyDynamicScheme) -> Self {
+    .init(
+      id: anyScheme.id,
+      url: anyScheme.parse(prop: "url"),
+      width: anyScheme.parse(prop: "width"),
+      height: anyScheme.parse(prop: "height")
+    )
+  }
+
+  // Erase type to AnyDynamicScheme
   public func eraseToAnyDynamicScheme() -> AnyDynamicScheme {
     .init(
       id: self.id,
@@ -31,15 +42,6 @@ public struct ImageScheme: DynamicScheme {
         "width": JSON(floatLiteral: Double(self.width)),
         "height": JSON(floatLiteral: Double(self.height))
       ]
-    )
-  }
-
-  public static func buildSchemeFrom(_ anyScheme: AnyDynamicScheme) -> Self {
-    .init(
-      id: anyScheme.id,
-      url: anyScheme.parse(prop: "url"),
-      width: anyScheme.parse(prop: "width"),
-      height: anyScheme.parse(prop: "height")
     )
   }
 }

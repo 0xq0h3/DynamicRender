@@ -12,6 +12,8 @@ public struct AnyDynamicScheme: DynamicScheme, Codable {
     self.raw = raw
   }
 
+  // Concrete Type implements DynamicScheme
+  // Build specific Schemes from raw JSON
   var typed: any DynamicScheme {
     switch type {
     case .row:
@@ -28,8 +30,7 @@ public struct AnyDynamicScheme: DynamicScheme, Codable {
   }
 }
 
-// Parsing
-
+// Parse property into type
 public extension AnyDynamicScheme {
   func parse(prop key: String) -> CGFloat {
     guard let value = raw[keyPath: key]?.doubleValue else {

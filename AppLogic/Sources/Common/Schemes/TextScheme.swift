@@ -11,13 +11,14 @@ public struct TextScheme: DynamicScheme {
     self.text = text
   }
 
+  // Initialize Scheme from reading properties in raw JSON
   public static func buildSchemeFrom(_ anyScheme: AnyDynamicScheme) -> Self {
     .init(
       id: anyScheme.id,
       text: anyScheme.parse(prop: "text")
     )
   }
-
+  // Erase type to AnyDynamicScheme
   public func eraseToAnyDynamicScheme() -> AnyDynamicScheme {
     .init(
       id: self.id,
