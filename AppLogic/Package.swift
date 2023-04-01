@@ -13,7 +13,6 @@ let package = Package(
     dependencies: [
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from: "4.70.0"),
-        .package(url: "https://github.com/vapor/fluent.git", from: "4.7.0"),
         .package(url: "https://github.com/iwill/generic-json-swift.git", from: "2.0.0"),
     ],
     targets: [
@@ -21,7 +20,6 @@ let package = Package(
             name: "Server",
             dependencies: [
               .target(name: "Common"),
-              .product(name: "Fluent", package: "fluent"),
               .product(name: "Vapor", package: "vapor"),
               .product(name: "GenericJSON", package: "generic-json-swift")
             ],

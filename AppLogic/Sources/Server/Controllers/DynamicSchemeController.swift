@@ -1,4 +1,3 @@
-import Fluent
 import Vapor
 
 struct DynamicSchemeController: RouteCollection {
