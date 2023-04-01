@@ -4,12 +4,14 @@
 open `DynamicRenderApp/DynamicRenderApp.xcodeproj`
 
 ### Run Server
-1. select scheme `Run` and for target `Mac`
+1. select scheme `Run` for target `Mac`
 2. build and run
 
 ### Run iOS Client
 1. select scheme `DynamicRenderApp` for target iOS
 2. build and run
+
+Please clean build then rebuild submodules when error occurs.
 
 ## Change UI in Server Side
 1. Comment out `DynamicSchemeResponse` in `AppLogic/Sources/Server/Controllers/DynamicSchemeController` 
@@ -34,8 +36,6 @@ open `DynamicRenderApp/DynamicRenderApp.xcodeproj`
 		</td>
 	</tr>
 </table>
-
-
 
 
 ## Module Structure
