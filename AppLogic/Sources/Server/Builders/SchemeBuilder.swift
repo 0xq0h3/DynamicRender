@@ -28,17 +28,13 @@ class SchemeBuilder {
       }
 
     let firstScheme = zip(labels, imageURLs)
-      .reduce([AnyDynamicScheme](), { acc, cur in
-        var array = acc
-
-        let (label, imageURL) = cur
+      .map { ele in
+        let (label, imageURL) = ele
         let imageScheme = ImageScheme(url: URL(withValid: imageURL), width: 150, height: 150).eraseToAnyDynamicScheme()
         let cellScheme = ColumnScheme(children: [imageScheme, label]).eraseToAnyDynamicScheme()
 
-        array.append(cellScheme)
-        return array
-      })
-      .chunks(ofCount: 2)
+        return cellScheme
+      }.chunks(ofCount: 2)
       .map { Array($0) }
       .map { json in
         let first = json.first ?? UnknownScheme().eraseToAnyDynamicScheme()
@@ -59,16 +55,13 @@ class SchemeBuilder {
       }
 
     let secondScheme = zip(labels, imageURLs)
-      .reduce([AnyDynamicScheme](), { acc, cur in
-        var array = acc
-
-        let (label, imageURL) = cur
+      .map { ele in
+        let (label, imageURL) = ele
         let imageScheme = ImageScheme(url: URL(withValid: imageURL), width: 300, height: 300).eraseToAnyDynamicScheme()
         let cellScheme = ColumnScheme(children: [imageScheme, label]).eraseToAnyDynamicScheme()
 
-        array.append(cellScheme)
-        return array
-      })
+        return cellScheme
+      }
 
     return secondScheme
   }

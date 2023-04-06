@@ -10,8 +10,8 @@ struct DynamicSchemeController: RouteCollection {
     let builder = SchemeBuilder()
 
     return DynamicSchemeResponse(
-      ui: builder.buildSimpleScheme(imageURL: imageURLs[0], text: "Hello, World!")
-//      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
+//      ui: builder.buildSimpleScheme(imageURL: imageURLs[0], text: "Hello, World!")
+      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
 //      ui: builder.buildSecondScheme(imageURLs: imageURLs, titles: titles, authors: authors)
 //      ui: builder.buildCustomScheme(imageURLs: imageURLs, titles: titles, authors: authors)
     )
