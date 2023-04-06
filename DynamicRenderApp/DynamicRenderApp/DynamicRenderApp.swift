@@ -3,7 +3,7 @@ import Client
 import SwiftUI
 
 @main
-struct DynamicRenderApp23: App {
+struct DynamicRenderApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()
