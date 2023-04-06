@@ -13,6 +13,7 @@ struct DynamicSchemeController: RouteCollection {
       ui: builder.buildSimpleScheme(imageURL: imageURLs[0], text: "Hello, World!")
 //      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
 //      ui: builder.buildSecondScheme(imageURLs: imageURLs, titles: titles, authors: authors)
+//      ui: builder.buildCustomScheme(imageURLs: imageURLs, titles: titles, authors: authors)
     )
   }
 

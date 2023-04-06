@@ -6,6 +6,12 @@ import Common
 class SchemeBuilder {
   init() { }
 
+  func buildCustomScheme(imageURLs: [String], titles: [String], authors: [String]) -> [AnyDynamicScheme] {
+    // Feel free to build anything!
+
+    return []
+  }
+
   func buildSimpleScheme(imageURL: String, text: String) -> [AnyDynamicScheme] {
     let image = ImageScheme(url: URL(withValid: imageURL), width: 300, height: 300).eraseToAnyDynamicScheme()
     let text = TextScheme(text: "Hello, World!").eraseToAnyDynamicScheme()
