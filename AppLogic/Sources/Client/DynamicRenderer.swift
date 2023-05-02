@@ -28,7 +28,8 @@ extension DynamicRenderer {
       return TextSchemeView(scheme: textScheme).eraseToAnyView()
     case let imageScheme as ImageScheme:
       return ImageSchemeView(scheme: imageScheme).eraseToAnyView()
-
+    case let buttonScheme as ButtonScheme:
+      return ButtonSchemeView(scheme: buttonScheme).eraseToAnyView()
     default:
       return Text("Not found").eraseToAnyView()
     }

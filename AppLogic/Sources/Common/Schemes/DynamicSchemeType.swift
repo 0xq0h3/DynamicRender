@@ -5,5 +5,6 @@ public enum DynamicSchemeType: String, Codable {
   case column
   case text
   case image
+  case button
   case unknown
 }

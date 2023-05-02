@@ -24,6 +24,8 @@ public struct AnyDynamicScheme: DynamicScheme, Codable {
       return TextScheme.buildSchemeFrom(self)
     case .image:
       return ImageScheme.buildSchemeFrom(self)
+    case .button:
+      return ButtonScheme.buildSchemeFrom(self)
     case .unknown:
       return UnknownScheme.buildSchemeFrom(self)
     }
@@ -69,3 +71,13 @@ public extension AnyDynamicScheme {
   }
 }
 
+// Parse property into type
+public extension AnyDynamicScheme {
+  func parse() -> AnyActionScheme? {
+    guard let rawAction = raw[keyPath: "action"],
+          rawAction != .null else {
+      return nil
+    }
+    return AnyActionScheme.buildSchemeFrom(rawAction)
+  }
+}

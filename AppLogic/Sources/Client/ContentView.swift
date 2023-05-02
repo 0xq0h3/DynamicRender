@@ -2,6 +2,9 @@ import SwiftUI
 
 public struct ContentView: View {
   @StateObject var viewModel = DynamicRenderViewModel()
+  @StateObject var alertState = AlertState(isShown: false, message: "")
+  @StateObject var sheetState = SheetState(isShown: false, shortID: "")
+
   public init() {}
   public var body: some View {
     VStack {
@@ -16,6 +19,8 @@ public struct ContentView: View {
 
       ScrollView {
         DynamicRenderer(schemes: viewModel.scheme)
+          .environmentObject(alertState)
+          .environmentObject(sheetState)
       }
     }
     .task {

@@ -3,4 +3,150 @@
    uuid = "20BD30BB-0743-4450-821C-AADD484B61AE"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EF6D8AA-7271-40D0-AAFD-EE3DEDFBAB47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "callAsFunction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6EF6D8AA-7271-40D0-AAFD-EE3DEDFBAB47 - d1db794e6b34e46c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Client.ExecutableAction.callAsFunction() -&gt; ()"
+                  moduleName = "DynamicRenderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0xq0h3/Projects/DynamicRender/AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "6EF6D8AA-7271-40D0-AAFD-EE3DEDFBAB47 - d1db794e6b34e46c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Client.ExecutableAction.callAsFunction() -&gt; ()"
+                  moduleName = "DynamicRenderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0xq0h3/Projects/DynamicRender/AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "2612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7ED59AB-F2D2-4594-B42E-10C087029D62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AppLogic/Sources/Common/Schemes/Actions/AnyActionScheme.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "typed"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2FE945F-21A3-4868-AD97-365FE188A3FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "callAsFunction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2FE945F-21A3-4868-AD97-365FE188A3FE - d1db794e6b34e4e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Client.ExecutableAction.callAsFunction() -&gt; ()"
+                  moduleName = "DynamicRenderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0xq0h3/Projects/DynamicRender/AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "1152">
+               </Location>
+               <Location
+                  uuid = "F2FE945F-21A3-4868-AD97-365FE188A3FE - d1db794e6b34e4e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Client.ExecutableAction.callAsFunction() -&gt; ()"
+                  moduleName = "DynamicRenderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/0xq0h3/Projects/DynamicRender/AppLogic/Sources/Client/UIElements/ExecutableAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "1204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96EF2203-DC7F-4978-A053-E31EED8A53A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AppLogic/Sources/Common/Schemes/Actions/AnyActionScheme.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "toJSON()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00187A35-0E13-40A8-BFF6-FD6F185A0928"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AppLogic/Sources/Server/Controllers/DynamicSchemeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "detailIndex(req:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -4,19 +4,30 @@ struct DynamicSchemeController: RouteCollection {
   func boot(routes: RoutesBuilder) throws {
     let schemes = routes.grouped("schemes")
     schemes.get(use: index)
+    let details = routes.grouped("detail")
+    details.group(":shortID") { detail in
+      detail.get(use: detailIndex)
+    }
   }
 
   func index(req: Request) throws -> DynamicSchemeResponse {
     let builder = SchemeBuilder()
 
     return DynamicSchemeResponse(
-//      ui: builder.buildSimpleScheme(imageURL: imageURLs[0], text: "Hello, World!")
-      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
+      ui: builder.buildSimpleScheme(imageURL: imageURLs[0], text: "Hello, World!")
+//      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
 //      ui: builder.buildSecondScheme(imageURLs: imageURLs, titles: titles, authors: authors)
 //      ui: builder.buildCustomScheme(imageURLs: imageURLs, titles: titles, authors: authors)
     )
   }
 
+  func detailIndex(req: Request) throws -> DynamicSchemeResponse {
+    let shortId = req.parameters.get("shortID")
+    let builder = SchemeBuilder()
+    return DynamicSchemeResponse(
+      ui: builder.buildFirstScheme(imageURLs: imageURLs, titles: titles, authors: authors)
+    )
+  }
   private let titles = [
     "beach",
     "landscape",
